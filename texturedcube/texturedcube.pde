@@ -38,9 +38,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
   texture(top); 
   //top
   vertex(0, 0, 0, 0, 0); 
-  vertex(1, 0, 0, 1, 0); 
+  vertex(1, 0, 0, 0, 1); 
   vertex(1, 0, 1, 1, 1); 
-  vertex(0, 0, 1, 0, 1); 
+  vertex(0, 0, 1, 1, 0); 
   endShape();
 
 
@@ -49,9 +49,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
 
   //bottom
   vertex(0, 1, 0, 0, 0); 
-  vertex(1, 1, 0, 1, 0); 
+  vertex(1, 1, 0, 0, 1); 
   vertex(1, 1, 1, 1, 1); 
-  vertex(0, 1, 1, 0, 1); 
+  vertex(0, 1, 1, 1, 0); 
   endShape(); 
 
   beginShape(QUADS);
@@ -59,9 +59,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
 
   //front
   vertex(0, 0, 1, 0, 0); 
-  vertex(0, 1, 1, 1, 0); 
+  vertex(0, 1, 1, 0, 1); 
   vertex(1, 1, 1, 1, 1); 
-  vertex(1, 0, 1, 1, 1); 
+  vertex(1, 0, 1, 1, 0); 
   endShape();
 
   beginShape(QUADS);
@@ -69,9 +69,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
 
   //back
   vertex(0, 0, 0, 0, 0); 
-  vertex(0, 1, 0, 1, 0); 
+  vertex(0, 1, 0, 0, 1); 
   vertex(1, 1, 0, 1, 1); 
-  vertex(1, 0, 0, 0, 1);
+  vertex(1, 0, 0, 1, 0);
   endShape();
 
   beginShape(QUADS);
@@ -79,9 +79,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
 
   //left
   vertex(0, 0, 0, 0, 0); 
-  vertex(0, 1, 0, 1, 0); 
+  vertex(0, 1, 0, 0, 1); 
   vertex(0, 1, 1, 1, 1); 
-  vertex(0, 0, 1, 0, 1); 
+  vertex(0, 0, 1, 1, 0); 
   endShape();
 
   beginShape(QUADS);
@@ -89,9 +89,9 @@ void cube(float posX, float posY, float posZ, PImage top, PImage bottom, PImage 
 
   //right
   vertex(1, 0, 0, 0, 0); 
-  vertex(1, 1, 0, 1, 0); 
+  vertex(1, 1, 0, 0, 1); 
   vertex(1, 1, 1, 1, 1); 
-  vertex(1, 0, 1, 0, 1); 
+  vertex(1, 0, 1, 1, 0); 
 
   endShape();
 
